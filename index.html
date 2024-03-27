@@ -1,1 +1,109 @@
-Harsha Coding
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Harsha Vardhan Reddy Karri</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+
+        <div id="container--main">
+
+            <section id="wrapper--hero" class="section--page">
+                <img id="profile-pic" src="./assets/images/harsha.jpg">
+                <div>
+                    <h1 id="user-name">Harsha Vardhan Reddy Karri</h1>
+                    <p id="bio">Full Stack Developer</p>
+                    <p id="email"> ✉ harshakarri81@gmail.com</p>
+                    <p id="phone">☎ +91 7036227775</p> <!-- Added phone number -->
+                </div>
+    
+            </section> 
+
+            <section class="section--page">
+
+                <div id="socials--list">
+                    <a href="https://medium.com/@harshacoding" target="_blank">medium</a>
+                    <a href="https://www.linkedin.com/in/harsha-vardhan-reddy-karri-462969266/?originalSubdomain=in" target="_blank">Linkedin</a>
+                    <a href="https://github.com/harshacoding" target="_blank">Github</a>
+                    <a href="./assets/" target="_blank">Download Resume</a>
+                </div>
+            </section>
+
+            <section class="section--page">
+                <h2>Professional Summary</h2>
+                <div style="width: 100%; display: flex; justify-content: center;">
+                    <div >
+                        <p>Full-stack developer with over 3+ years of experience specializing 
+                            in creating Microservices based applications using Angular, Spring 
+                            Boot, and MySQL. Skilled in translating business needs into 
+                            efficient technical solutions, delivering top-notch software, and 
+                            optimizing system performance.</p>
+                    </div>
+                    <div style="width: 130%; display: flex; justify-content: right;">
+                        <a href="https://github.com/harshacoding" target="_blank">
+                            <img style="width: 150px;" src="./assets/images/fullstack-development.png" alt="Full-Stack">
+                        </a>
+                    </div>
+    
+                </div>
+                
+               
+            
+            </section>
+            
+            
+            <section class="section--page">
+                <h2>Skills & Qualifications</h2>
+                <h3>Frontend with Angular:</h3>
+                <ul id="qualifications--list">
+                    <li>Utilized Angular framework for developing the frontend components.</li>
+                    <li>Implemented modular architecture to ensure scalability and maintainability.</li>
+                    <li>Employed Angular services for handling communication with backend microservices.</li>
+                    <li>Implemented responsive design for seamless user experience across devices.</li>
+                    <li>Utilized Angular Material for UI components and theming.</li>
+                </ul>
+                <h3>Backend with Spring Boot:</h3>
+                <ul id="qualifications--list">
+                    <li>Implemented backend microservices using Spring Boot framework.</li>
+                    <li>Designed each microservice to focus on specific business functionalities.</li>
+                    <li>Utilized Spring Data JPA for database interaction and Hibernate for ORM.</li>
+                    <li>Implemented RESTful APIs to enable communication between frontend and backend.</li>
+                    <li>Employed Spring Security for authentication and authorization.</li>
+                </ul>
+                <h3>Communication between Microservices:</h3>
+                <ul id="qualifications--list">
+                    <li>Implemented communication between microservices using RESTful API calls.</li>
+                </ul>
+                <h3>Database Management:</h3>
+                <ul id="qualifications--list">
+                    <li>Utilized MySQL for database management, ensuring data integrity and reliability.</li>
+                    <li>Implemented database per microservice pattern to decouple data storage.</li>
+                </ul>
+            </section>  
+        </div>
+
+        <script>
+            // Your JavaScript code goes here
+            const toggleButton = document.getElementById("toggle-button");
+            const body = document.body;
+    
+            toggleButton.addEventListener("click", () => {
+                body.classList.toggle("dark-mode");
+            });
+    
+            // Check if the user's preference is stored in localStorage
+            const userPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const storedMode = localStorage.getItem("mode");
+    
+            // Set the initial mode based on user preferences or stored preference
+            if (storedMode === "dark" || (userPrefersDark && !storedMode)) {
+                body.classList.add("dark-mode");
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+/* Style for the icon (you can add your own icon styles here) */
+.icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    /* Add icon background or image here */
+}
+:root:not(.dark-mode) {
+    --mainTextColor-day: #000;
+    --secondaryTextColor-day: (51 51 51);
+    --mainLinkColor-day: #0da2b8;
+    --mainBorderColo-day: rgb(218, 218, 218);
+    --mainBgColor-day: rgb(249, 250, 251);
+}
+
+
+/* Dark Mode */
+.dark-mode {
+
+    --mainTextColor-dark:#fff;
+    --secondaryTextColor-dark:#adb0b1;
+    --mainLinkColor-dark:rgb(30, 190,214);
+    --mainBorderColor-dark:#2b3031;
+    --mainBgColor-dark:#131415;
+
+}
+
+* {
+    font-family: 'Readex Pro';
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor);
+}
+
+body {
+    background-color: var(--mainBgColor);
+}
+
+p, span, li {
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-weight: 500;
+}
+
+li {
+    line-height: 1.9em;
+}
+
+#container--main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#bio, a {
+    font-weight: 300;
+}
+
+#user-name {
+    font-size: 48px;
+    line-height: 1em;
+}
+
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#email {
+    color: var(--mainTextColor);
+}
+
+#socials--list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a {
+    font-weight: 300;
+    color: var(--secondaryTextColor);
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#socials--list a:hover {
+    font-weight: 100;
+    color: var(--mainLinkColor);
+    font-size: 0.9em;
+}
+
+#qualifications--list {
+    list-style: none;
+}
+
+/* New CSS for the certifications section */
+.certification {
+    margin-bottom: 20px;
+}
+
+.certification img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.certification p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.certification p:first-child {
+    font-weight: bold;
+}
